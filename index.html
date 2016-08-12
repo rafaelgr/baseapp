@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es-es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="The bare minimun page">
+    <meta name="author" content="Rafael García (dev.ragare@gmail.com)">
+    <meta name="viewport" content="width=device-with, initial-scale=1.0, maximun-scale=1.0, user-scalable=no">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/font-awesome.css">
+    <!-- SmartAdmin Styles : Caution! DO NOT change the order -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/plugins-related.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/production.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/skins.css">
+    <!-- SmartAdmin RTL Support -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/rtl.css">
+    <!-- Our own styles -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ariadna.css">
+    <!-- FAVICIONS -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- JS -->
+    <!-- jquery & jquery-ui -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+    <!-- TODO: Consider Apple things for Safari -->
+    <title>Me ves?</title>
+</head>
+
+<body class="">
+    <!-- BEGIN HEADER -->
+    <header id="header" class="ariadna-header">
+        <!-- logo header -->
+        <div>
+            <span id="logo"> <img src="img/logo_ariadna_ab1.jpg" alt="Ariadna Software" class="ariadna-header-logo"> </span>
+        </div>
+        <!-- title header -->
+        <div class="ariadna-header-title">
+            <h1> Ariadna (Aplicación de prueba) </h1>
+        </div>
+        <!-- header buttons -->
+        <div class="pull-right">
+            <!-- collapse menu button -->
+            <div id="hide-menu" class="btn-header pull-right">
+                <span>
+                    <a href="javascript:void(0);" data-action="toggleMenu" title="Collapse Menu">
+                        <i class="fa fa-reorder"></i>
+                    </a>
+                </span>
+            </div>
+            <!-- end collapse menu -->
+            <!-- logout button -->
+            <div id="logout" class="btn-header transparent pull-right">
+                <span>
+                    <a href="login.html" title="Salir">
+                        <i class="fa fa-sign-out"></i>
+                    </a>
+                </span>
+            </div>
+            <!-- end logout button -->
+            <!-- fullscreen button -->
+            <div id="fullscreen" class="btn-header transparent pull-right">
+                <span>
+                        <a href="javascript:void(0);" data-action="launchFullscreen" title="Full Screen">
+                            <i class="fa fa-arrows-alt"></i>
+                        </a>
+                    </span>
+            </div>
+            <!-- end fullscreen button -->
+        </div>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- SIDE MENU -->
+    <aside id="left-panel">
+        <span>
+            <a href="javascript:void(0);" id="show-shortcut">
+                <i class="fa fa-user fa-2x"></i>
+                <!-- Show here user information -->
+                <span id="userName"></span>
+        </a>
+        </span>
+        <nav>
+            <ul>
+                <li id="aswhome">
+                    <a href="index.html" title="Home">
+                        <i class="fa fa-lg fa-fw fa-home"></i> <span class="menu-item-parent">HOME</span>
+                    </a>
+                </li>
+                <li id="aswMain">
+                    <a href="#">
+                        <i class="fa fa-lg fa-fw fa-bank"></i> <span class="menu-item-parent">MAIN</span>
+                    </a>
+                    <ul>
+                        <li id="aswmain2">
+                            <a href="#">
+                                <i class="fa fa-cog"></i> Main2
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <!-- END SIDE MENU -->
+
+    <!-- MAIN PANEL -->
+    
+    <!-- END MAIN PANEL -->
+    <p>Hi there!</p>
+</body>
+
+</html>
